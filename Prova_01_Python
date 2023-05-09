@@ -1,0 +1,50 @@
+# EXERCICIO 1 - PROVA
+# nome = input("Digite seu nome: ")
+# peso = float(input("Coloque o seu peso: "))
+# agua_ingerida = float(input("Quanto de água você ja ingeriu em litros? "))
+#
+# agua_ideal = peso * 0.035
+# agua_a_ingerir = agua_ideal - agua_ingerida
+#
+# print("Seu nome é: ", nome)
+# print("Seu peso é: ", peso)
+# print("Você ingeriu: ", agua_ingerida , "Litros")
+# print("Precisa ingerir: ","{:.2f}".format(agua_ideal), "Litros")
+#
+# if agua_ingerida > agua_ideal:
+#     print("Parabéns, você atingiu a meta de hidratação diária")
+# else: print("Continue focado em se hidratar por hoje, ainda faltam", "{:.2f}".format(agua_a_ingerir), "litros! Você consegue!")
+
+
+
+# EXERCICIO 2 - PROVA
+placa = input("Informe a placa do veículo: ")
+valor_litro = float(input("Informe o valor do litro do combustível: "))
+velocidade_60 = float(input("Informe a quantidade de quilômetros rodados a 60 KM/H: "))
+velocidade_80 = float(input("Informe a quantidade de quilômetros rodados a 80 KM/H: "))
+velocidade_100 = float(input("Informe a quantidade de quilômetros rodados a 100 KM/H: "))
+velocidade_120 = float(input("Informe a quantidade de quilômetros rodados a 120 KM/H: "))
+velocidade_140 = float(input("Informe a quantidade de quilômetros rodados a 140 KM/H: "))
+
+
+litros_60 = velocidade_60 / 30.7
+litros_80 = velocidade_80 / 26.8
+litros_100 = velocidade_100 / 22.4
+litros_120 = velocidade_120 / 18.1
+litros_140 = velocidade_140fg / 14.5
+
+litros_total = litros_60 + litros_80 + litros_100 + litros_120 + litros_140
+
+
+velocidade = (velocidade_60 * 60) + (velocidade_80 * 80) + (velocidade_100 * 100) + (velocidade_120 * 120) + (velocidade_140 * 140)
+tempo_total = velocidade_60  + velocidade_80  + velocidade_100  + velocidade_120  + velocidade_140
+
+velocidade_media =  velocidade/tempo_total
+
+
+custo_total = litros_total * valor_litro
+
+print("Placa do veículo:", placa)
+print("Custo total da viagem: R$ {:.2f}".format(custo_total))
+print("Velocidade média ponderada da viagem: {:.2f} KM/H".format(velocidade_media))
+print("Quantidade total de combustível: {:.2f} litros".format(litros_total))
